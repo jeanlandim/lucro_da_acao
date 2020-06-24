@@ -16,14 +16,14 @@ class LucroDaAcao:
         if index_valor_minimo < index_valor_maximo:
            dia_da_acao = (index_valor_minimo+1, index_valor_maximo+1)  
         else:
-           dia_da_acao = None 
+           dia_da_acao = 0 
         
         return dia_da_acao
 
     def pega_acao(self, acao:list) -> Tuple: 
         """ Retorna ao usuário o dia da compra e o dia da venda """
         calcula_acao = self.calcula_acao(acao) 
-        if calcula_acao == None:
+        if calcula_acao == 0:
            print("Não compensa comprar ação com este dados!")
         else:
            print(f"É vantajoso comprar ação no dia "+\
