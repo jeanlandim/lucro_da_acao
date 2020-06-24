@@ -8,7 +8,7 @@ def test_calcula_acao():
     # Desvantagem
     desvantagem = [10,9,8,7,6]
     # Testa se retorna None se for desvantajoso comprar uma ação
-    assert lucro_da_acao.calcula_acao(desvantagem) == None
+    assert lucro_da_acao.calcula_acao(desvantagem) == 0
     # Testar se retorna a vantagem
     assert lucro_da_acao.calcula_acao(vantagem) == (4,5)
     
